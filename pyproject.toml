@@ -1,0 +1,18 @@
+# La carte d'identité du paquet : son nom, ce dont il a besoin.
+# `pip install -e .` la lit pour installer morisot et ses dépendances.
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "morisot"
+version = "0.1.0"
+description = "Le jumeau numérique de MITHiC parfait (ZELDA, SLM, Lyot), en numpy"
+authors = [{ name = "Anton Neisius" }]
+requires-python = ">=3.12"
+dependencies = ["numpy", "scipy", "matplotlib"]
+
+[tool.setuptools]
+packages = ["morisot"]
+

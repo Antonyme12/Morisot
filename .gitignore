@@ -1,0 +1,15 @@
+# Ce que git ne doit jamais envoyer sur GitHub.
+
+# Les fichiers que Python fabrique tout seul en important le code
+__pycache__/
+*.egg-info/
+
+# Les figures que les simulations écrivent (plot=True) : elles se refont
+resultats/
+
+# L'environnement Python, si on le crée dans le dossier (python -m venv .venv)
+.venv/
+
+# Les réglages personnels de l'éditeur et du Mac
+.vscode/
+.DS_Store
